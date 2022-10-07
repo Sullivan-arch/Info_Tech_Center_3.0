@@ -20,3 +20,12 @@ def weather():
     weather_condition = random.choice(weather_forcast)
     return(weather_condition)
 
+weatherAlert = weather()
+
+
+def vehicle_response_system():
+    if weatherAlert == "Icy":
+        print("\nVRS has changed your alarm 30 minutes earlier based on the NWS forcast of",weatherAlert)
+
+vehicle_response_system()
+
