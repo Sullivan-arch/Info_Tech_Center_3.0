@@ -16,6 +16,6 @@ print("\n\nWelcome to Operation Fury Info_Tech Center")
 sleep(2)
 print("\033[1;33;40m \nOperation Fury's Operation System is Booting up")
 
-for i in range(2):
-    print("\033[1;35;40m \nOS Booting Up")
+for i in range(4):
+    print("\033[1;35;40m OS Booting Up")
     sleep(1)
