@@ -16,3 +16,12 @@ def gas_level_gauge():
     current_gas_level = random.choice(gas_level_list)
     return current_gas_level
 
+#Variable calling the gas_level_gauge function to store value once
+gas_level_indicator = gas_level_gauge()
+
+def gas_level_alert():
+    if gas_level_indicator == "Empty":
+        print("***WARNING YOU ARE ON EMPTY***\nCalling Emergency Contact")
+
+
+gas_level_gauge()
