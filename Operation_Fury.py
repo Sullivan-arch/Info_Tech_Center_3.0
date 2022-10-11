@@ -1,3 +1,9 @@
+#******************************
+#Import Libraries here
+from time import sleep#We imported the Sleep function from the Time library
+import random#Weather condition list using the random.choice library to randomly choose a condition and storing it in its brain
+#******************************
+
 
 #Welcome Screen
 #Developer: Sullivan Abegg
@@ -7,8 +13,7 @@
 Our Welcome Screen will start our program letting
 drivers know that the InfoTechCenter OS is loading. 
 """
-#Import Libraries here
-from time import sleep#We imported the Sleep function from the Time library
+
 
 print("\033[1;34;40m  \n")#033 is the escape code, 1=Style, 32=Text color, 40m=background color
 #Black-30, Red-31, Green-32, Yellow-33, Blue-34, Purple-35, Cyan-36, White-37
@@ -33,11 +38,7 @@ to check the condition and print a specific corresponding
 print line
 """
 
-#import Libraries here
-import random#Weather condition list using the random.choice library to randomly choose a condition and storing it in its brain
-from time import sleep #Import Time Library add sleep function
-#Weather condition list using the random.choice library
-#to randomly choose a condition and storing it in its brain
+
 def weather():
     weather_forcast = ["Rain","Snow","Sunny","Windy","Foggy","Storming","Icy"]
     weather_condition = random.choice(weather_forcast)
