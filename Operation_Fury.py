@@ -57,6 +57,7 @@ def gas_level_alert():
         print("Searching...")
         sleep(1)
         print("The closest gas station is", list_of_gas_stations(),"located",miles_to_gas_station_quarter_tank,"miles away.")
+    elif gas_level_indicator == "Half Tank":
 
 
 gas_level_alert()
