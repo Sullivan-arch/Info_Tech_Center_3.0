@@ -22,11 +22,12 @@ def gas_level_gauge():
 gas_level_indicator = gas_level_gauge()
 
 def list_of_gas_stations():
-    gas_stations = ["Shell","Circle K","Marathon","Speedway","Meijer"]
+    gas_stations = ["Shell","Circle K","Marathon","Speedway","Meijer",]
     gas_station_nearby = random.choice(gas_stations)
     return gas_station_nearby
 
 def gas_level_alert():
+    miles_to_gas_station = round(random.uniform(1, 25), 1)
     if gas_level_indicator == "Empty":
         print("***WARNING YOU ARE ON EMPTY***")
         sleep(1)
@@ -42,7 +43,8 @@ def gas_level_alert():
         sleep(1)
         print("Searching...")
         sleep(1)
-        print("The closest gas station is", list_of_gas_stations())
+        print("The closest gas station is", list_of_gas_stations(),"located",miles_to_gas_station,"miles away.")
+    
 
 
 gas_level_alert()
