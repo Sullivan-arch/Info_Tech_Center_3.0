@@ -29,7 +29,6 @@ def list_of_gas_stations():
 def gas_level_alert():
     miles_to_gas_station_low = round(random.uniform(1, 25), 1)
     miles_to_gas_station_quarter_tank = round(random.uniform(26, 50), 1)
-    miles_to_gas_station_half = round(random.uniform(51, 100), 1)
     if gas_level_indicator == "Empty":
         print("***WARNING YOU ARE ON EMPTY***")
         sleep(1)
